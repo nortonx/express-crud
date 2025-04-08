@@ -4,7 +4,7 @@
   "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/main.ts",
+    "start": "node src/main.ts --trace-warnings",
     "dev": "node --watch src/main.ts"
   },
   "keywords": [],
