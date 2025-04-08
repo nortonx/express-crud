@@ -1,0 +1,19 @@
+@baseUrl=http://localhost:4000
+### Get all movies
+GET {{baseUrl}}/filmes
+
+### Get all movies with params
+GET {{baseUrl}}/filmes?ignorar=elenco,diretor,genero
+
+### Get 1 movie
+GET {{baseUrl}}/filmes/FIL001
+
+### Get movie that does not exist
+GET {{baseUrl}}/filmes/FIL0018
+
+### Request to test if server is up
+GET {{baseUrl}}/ping
+
+### Search filmes
+GET {{baseUrl}}/filmes/FIL001?ignorar=elenco,diretor,genero
+
