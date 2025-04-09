@@ -1,6 +1,7 @@
-import { Ator } from "./ator";
-import { Diretor } from "./diretor";
-import { Genero } from "./genero";
-import { Filme } from "./filme";
+import { Ator } from "./ator.ts";
+import { Diretor } from "./diretor.ts";
+import { Genero } from "./genero.ts";
+import { Filme } from "./filme.ts";
+import { Usuario } from "./usuario.ts";
 
-export { Ator, Diretor, Genero, Filme };
+export { Ator, Diretor, Genero, Filme, Usuario };

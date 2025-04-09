@@ -37,7 +37,7 @@ export const filmes: any = [
 			},
 		],
 		sinopse:
-			"Buscapé é um jovem pobre, negro e muito sensí­vel, que cresce em um universo de muita violência. Ele vive na Cidade de Deus, favela carioca conhecida pela violência e pela criminalidade.",
+			"Buscapé é um jovem pobre, negro e muito sensível, que cresce em um universo de muita violência. Ele vive na Cidade de Deus, favela carioca conhecida pela violência e pela criminalidade.",
 	},
 	{
 		id: "FIL002",
@@ -45,7 +45,7 @@ export const filmes: any = [
 		ano: 2007,
 		genero: [
 			{ id: "GEN001", nome: "Crime" },
-			{ id: "GEN003", nome: "Açío" },
+			{ id: "GEN003", nome: "Ação" },
 		],
 		diretor: {
 			id: "DIR002",
@@ -57,7 +57,7 @@ export const filmes: any = [
 			{
 				id: "ATR004",
 				nome: "Wagner Moura",
-				papel: "Capitío Nascimento",
+				papel: "Capitão Nascimento",
 				nascimento: "1976-06-27",
 				nacionalidade: "Brasileiro",
 			},
@@ -77,7 +77,7 @@ export const filmes: any = [
 			},
 		],
 		sinopse:
-			"Em 1997, antes de visitar o Rio de Janeiro, o Papa Joío Paulo II solicita uma operaçío para eliminar o tráfico de drogas nas favelas próximas ao local onde pretende se hospedar.",
+			"Em 1997, antes de visitar o Rio de Janeiro, o Papa João Paulo II solicita uma operação para eliminar o tráfico de drogas nas favelas próximas ao local onde pretende se hospedar.",
 	},
 	{
 		id: "FIL003",
@@ -100,21 +100,21 @@ export const filmes: any = [
 			},
 			{
 				id: "ATR008",
-				nome: "Viní­cius de Oliveira",
+				nome: "Vinícius de Oliveira",
 				papel: "Josué",
 				nascimento: "1985-07-18",
 				nacionalidade: "Brasileiro",
 			},
 			{
 				id: "ATR009",
-				nome: "Marí­lia Pêra",
+				nome: "Marília Pêra",
 				papel: "Irene",
 				nascimento: "1943-01-22",
 				nacionalidade: "Brasileira",
 			},
 		],
 		sinopse:
-			"Dora escreve cartas para pessoas analfabetas na estaçío Central do Brasil, no Rio de Janeiro. Quando uma de suas clientes morre em um acidente, ela decide ajudar o filho dela a encontrar o pai.",
+			"Dora escreve cartas para pessoas analfabetas na estação Central do Brasil, no Rio de Janeiro. Quando uma de suas clientes morre em um acidente, ela decide ajudar o filho dela a encontrar o pai.",
 	},
 	{
 		id: "FIL004",
@@ -134,7 +134,7 @@ export const filmes: any = [
 			{
 				id: "ATR010",
 				nome: "Matheus Nachtergaele",
-				papel: "Joío Grilo",
+				papel: "João Grilo",
 				nascimento: "1969-01-03",
 				nacionalidade: "Brasileiro",
 			},
@@ -154,7 +154,7 @@ export const filmes: any = [
 			},
 		],
 		sinopse:
-			"As aventuras de Joío Grilo e Chicó, dois nordestinos pobres que tentam sobreviver aplicando golpes e se metendo em confusões.",
+			"As aventuras de João Grilo e Chicó, dois nordestinos pobres que tentam sobreviver aplicando golpes e se metendo em confusões.",
 	},
 	{
 		id: "FIL005",
@@ -162,7 +162,7 @@ export const filmes: any = [
 		ano: 2019,
 		genero: [
 			{ id: "GEN005", nome: "Suspense" },
-			{ id: "GEN006", nome: "Ficçío Científica" },
+			{ id: "GEN006", nome: "Ficção Científica" },
 		],
 		diretor: {
 			id: "DIR005",
@@ -187,18 +187,18 @@ export const filmes: any = [
 			},
 			{
 				id: "ATR014",
-				nome: "Sí´nia Braga",
+				nome: "Sônia Braga",
 				papel: "Domingas",
 				nascimento: "1950-06-08",
 				nacionalidade: "Brasileira",
 			},
 		],
 		sinopse:
-			"Os moradores de Bacurau, um pequeno povoado do sertío brasileiro, descobrem que a comunidade nío consta mais em qualquer mapa. Aos poucos, percebem algo estranho na regiío: enquanto drones sobrevoam o céu, estrangeiros chegam à cidade.",
+			"Os moradores de Bacurau, um pequeno povoado do sertão brasileiro, descobrem que a comunidade não consta mais em qualquer mapa. Aos poucos, percebem algo estranho na região: enquanto drones sobrevoam o céu, estrangeiros chegam à cidade.",
 	},
 	{
 		id: "FIL006",
-		titulo: "Minha Míe é uma Peça",
+		titulo: "Minha Mãe é uma Peça",
 		ano: 2013,
 		genero: [{ id: "GEN004", nome: "Comédia" }],
 		diretor: {
@@ -211,7 +211,7 @@ export const filmes: any = [
 			{
 				id: "ATR015",
 				nome: "Paulo Gustavo",
-				papel: "Dona Hermí­nia",
+				papel: "Dona Hermínia",
 				nascimento: "1978-10-30",
 				nacionalidade: "Brasileiro",
 			},
@@ -231,7 +231,7 @@ export const filmes: any = [
 			},
 		],
 		sinopse:
-			"Dona Hermí­nia é uma mulher de meia-idade, divorciada do marido que a trocou por uma mulher mais jovem. Hiperativa e controladora, ela nío larga do pé dos filhos Marcelina e Juliano.",
+			"Dona Hermínia é uma mulher de meia-idade, divorciada do marido que a trocou por uma mulher mais jovem. Hiperativa e controladora, ela não larga do pé dos filhos Marcelina e Juliano.",
 	},
 	{
 		id: "FIL007",
@@ -268,7 +268,7 @@ export const filmes: any = [
 			},
 		],
 		sinopse:
-			"A pernambucana Val se mudou para Sío Paulo a fim de dar melhores condições de vida à filha Jéssica. Treze anos depois, a jovem decide ir para Sío Paulo prestar vestibular, o que abala a rotina da casa onde sua míe trabalha como empregada doméstica.",
+			"A pernambucana Val se mudou para São Paulo a fim de dar melhores condições de vida à filha Jéssica. Treze anos depois, a jovem decide ir para São Paulo prestar vestibular, o que abala a rotina da casa onde sua mãe trabalha como empregada doméstica.",
 	},
 	{
 		id: "FIL008",
@@ -348,7 +348,7 @@ export const filmes: any = [
 			},
 		],
 		sinopse:
-			"Cláudio e Helena formam um casal que vive em pé de guerra. Após uma briga, eles misteriosamente trocam de corpos e sío obrigados a viver a vida um do outro.",
+			"Cláudio e Helena formam um casal que vive em pé de guerra. Após uma briga, eles misteriosamente trocam de corpos e são obrigados a viver a vida um do outro.",
 	},
 	{
 		id: "FIL010",
@@ -391,3 +391,4 @@ export const filmes: any = [
 			"Um médico se oferece para realizar um trabalho de prevenção à AIDS na Casa de Detenção de São Paulo, o maior presídio da América Latina. Lá, ele conhece de perto a realidade dos detentos e testemunha a violenta rebelião de 1992.",
 	},
 ];
+

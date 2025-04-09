@@ -1,19 +1,69 @@
-@baseUrl=http://localhost:4000
-### Get all movies
-GET {{baseUrl}}/filmes
+@urlBase=http://localhost:4000
 
-### Get all movies with params
-GET {{baseUrl}}/filmes?ignorar=elenco,diretor,genero
+### Pegar todos os filmes
+GET {{urlBase}}/filmes
 
-### Get 1 movie
-GET {{baseUrl}}/filmes/FIL001
+### Pegar todos os filmes com parâmetro de query
+GET {{urlBase}}/filmes?ignorar=elenco,genero
 
-### Get movie that does not exist
-GET {{baseUrl}}/filmes/FIL0018
+### Ping
+GET {{urlBase}}/ping
 
-### Request to test if server is up
-GET {{baseUrl}}/ping
+### Filme com Id inexistente
+GET {{urlBase}}/filmes/oi
 
-### Search filmes
-GET {{baseUrl}}/filmes/FIL001?ignorar=elenco,diretor,genero
+### Filme com Id existente
+GET {{urlBase}}/filmes/FIL001
 
+
+### Filme com Id existente e parametro de query
+GET {{urlBase}}/filmes/FIL001?ignorar=diretor,genero,elenco
+
+
+### Criar um filme
+POST {{urlBase}}/filmes
+Content-Type: application/json
+
+{
+    "titulo": "Novo filme",
+    "ano": 2020,
+    "genero": [
+        { "id": "GEN003", "nome": "Ação" }
+    ],
+    "diretor": {
+        "id": "DIR102",
+        "nome": "Novo diretor",
+        "nascimento": "1967-08-01",
+        "nacionalidade": "Brasileiro"
+    },
+    "elenco": [
+        {
+            "id": "ATR104",
+            "nome": "Novo ator",
+            "papel": "Protagonista",
+            "nascimento": "1976-06-27",
+            "nacionalidade": "Brasileiro"
+        }
+    ],
+    "sinopse":"Um novo filme muito legal"
+}
+
+
+### Editar um filme
+PATCH {{urlBase}}/filmes/FIL001
+Content-Type: application/json
+
+{
+    "titulo": "Filme atualizado",
+    "ano": 2000,
+    "diretor": {
+        "id": "DIR999",
+        "nome": "Diretor Famoso",
+        "nascimento": "1970-08-01",
+        "nacionalidade": "Estadunidense"
+    },
+    "sinopse":"Um filme alterado"
+}
+
+### Deletar um filme
+DELETE {{urlBase}}/filmes/FIL001

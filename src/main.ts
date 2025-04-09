@@ -1,54 +1,28 @@
-import express from "express"
-import { configDotenv } from "dotenv"
-import { filmes } from "./dados/filmes.ts"
-import type { Filme } from "./model/index.ts";
+import express from "express";
+import { configDotenv } from "dotenv";
+import { routerInfo } from "./rotas/info/rotas.ts";
+import { routerFilmes } from "./rotas/filmes/rotas.ts"
+import { primeiroMiddleware } from "./middlewares/primeiro.ts";
+import { routerAuth } from "./rotas/autenticacao/rotas.ts";
+import { jwtMiddleware } from "./middlewares/jwt.ts";
+configDotenv();
 
-configDotenv()
-
-const app = express()
-const port = process.env.PORT
-
-function clearFields(filme: Filme, ignore: string | undefined) {
-  
-  const ignoredFields = ignore ? ignore.toString().split(',') : []
-
-  const copia: Partial<Filme> = {...filme}
-  ignoredFields.forEach((field: string) => {
-    delete copia[field as keyof Filme]
-  })
-  return copia
-}
+const app = express();
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+// app.use(primeiroMiddleware)
+// app.use(jwtMiddleware)
+app.use(routerAuth)
+app.use("/info", jwtMiddleware, routerInfo)
+app.use("/filmes", routerFilmes)
 
 app.get("/ping", (req, res) => {
-  console.log("someone pinged here!");
-  res.send("pong")
-})
-
-app.get("/filmes", (req, res) => {
-  const { ignorar } = req.query as any
-  const filmesProcessados = filmes.map((filme: Filme) => {
-    return clearFields(filme, ignorar)
-  })
-  res.status(200).json(filmesProcessados)
-})
-
-
-app.get("/filmes/:id", (req, res) => {
-  const { id } = req.params
-  const { ignorar } = req.query as any
-  
-  const filme = filmes.find((filme: Filme) => filme.id === id)
-  
-  if (!filme) {
-    res.status(404).json({ message: "Filme não encontrado"})
-    return
-  }
-
-  res.status(200).json(clearFields(filme, ignorar))
-})
-
-
-app.listen(port, () => {
-  console.log(`Server running on port ${port}...`)
+	res.send("pong!");
 });
 
+const porta = process.env.PORT;
+
+
+app.listen(porta, () => {
+	console.log(`Servidor rodando na porta ${porta}!`);
+});
